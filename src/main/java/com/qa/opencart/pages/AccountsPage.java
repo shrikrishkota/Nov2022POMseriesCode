@@ -34,14 +34,14 @@ public class AccountsPage {
 	public String getAccPageTitle() {
 		//String title = driver.getTitle();
 		String title = eleUtil.waitForTitleContainsAndFetch(AppConstants.DEFAULT_SHORT_TIME_OUT, AppConstants.ACCOUNTS_PAGE_TITLE_VALUE);
-		System.out.println("Acc page title : " + title);
+		System.out.println("Acc page title is: " + title);
 		return title;
 	}
 	
 	public String getAccPageURL() {
 		//String url = driver.getCurrentUrl();
 		String url = eleUtil.waitForURLContainsAndFetch(AppConstants.DEFAULT_SHORT_TIME_OUT, AppConstants.ACCOUNTS_PAGE_URL_FRACTION_VALUE);
-		System.out.println("Acc page url : " + url);
+		System.out.println("Acc page url is: " + url);
 		return url;
 	}
 	
